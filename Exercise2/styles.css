@@ -1,0 +1,281 @@
+* {
+    margin: 0; padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+    
+}
+
+/*--- HEADER ---*/
+header {
+    width: 100%;
+    background-color: #1F2937;
+    
+    display: flex;
+    flex-direction: column;
+
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    margin: 0px 150px 30px 150px;
+}
+
+.michi-logo {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.michi-logo:hover {
+    animation:  rotate 1s linear;
+    box-shadow: 2px 5px 5px #e5e7eb8a;
+}
+
+@keyframes rotate {
+    from {
+      transform: rotate(0deg); /
+    }
+    to {
+      transform: rotate(360deg); 
+    }
+  }
+  
+nav > ul {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 30px;
+}
+
+li {
+    padding: 20px;
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: #E5E7EB;
+}
+
+a:hover {
+    color: #1F2937;
+    background-color: #f4f5f893;
+    cursor: pointer;
+    padding: 5px 20px;
+    border-radius: 20px;
+}
+
+.text, .img {
+    width: 50%;
+}
+
+img {
+    width: 100%;
+    box-shadow: 2px 5px 5px;
+}
+
+.text {
+    padding: 30px 30px 30px 0px;
+}
+
+h1 {
+    color: #F9FAF8;
+    font-size: 48px;
+    font-weight: 700;
+}
+
+.text > p {
+    color: #E5E7EB;
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+
+.btn-signup {
+    font-size: 18px;
+    padding: 7px 30px;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+.btn1 {
+    color: #E5E7EB;
+    background-color: #3882F6;
+}
+.btn1:hover {
+    background-color: #E5E7EB;
+    color: #3882F6;
+}
+/*--- FIN HEADER ---*/
+
+/*--- RANDOM INFO CONTAINER ---*/
+
+.random-info-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+h2 {
+    margin-top: 30px;
+    color: #1F2937;
+    font-size: 36px;
+    font-weight: 600px;
+}
+
+.box-text {
+    width: 160px;
+    max-height: 250px;
+    margin: 30px 30px 100px 30px;
+}
+
+.info-boxes {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+}
+
+.box {
+    width: 160px;
+    height: 180px;
+    border: 3px solid #3882F6;
+    border-radius: 30px;
+    margin-bottom: 10px;
+}
+
+.box-text > p {
+    color: rgb(79, 83, 82);
+    text-align: center;
+}
+
+/*---FIN RANDOM INFO CONTAINER */
+
+/*-- QUOTE--*/
+.inspiring-quote {
+    background-color: #E5E7EB;
+}
+
+.inspiring-quote > p {
+    text-align: left;
+    color: #1F2937;
+    font-size: 36px;
+    font-style: italic;
+    padding: 100px 245px;
+}
+
+span {
+    text-align: right;
+    font-size: 25px;
+    font-weight: 600;
+    font-style: normal;
+    margin-left: 60%;
+}
+
+/*-- FIN QUOTE--*/
+
+/*---CALL TO ACTION---*/
+
+.blue-box {
+    background-color: #3882F6;
+    margin: 50px 200px;
+    border-radius: 15px;
+    padding: 50px 100px;
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.paragraphs {
+    color: #E5E7EB;
+    padding: 20px;
+}
+
+h3 {
+    font-size: 24px;
+}
+
+.btn2:hover {
+    background-color: #1F2937;
+    color: #E5E7EB;
+}
+/*---CALL TO ACTION---*/
+
+/*---FOOTER---*/
+footer {
+    padding: 30px 100px;
+    background-color: #1F2937;
+    text-align: center;
+    color: #E5E7EB;
+}
+
+/*---FIN FOOTER---*/
+
+/*---QUERIES---*/
+@media screen and (max-width: 1240px) {
+    .blue-box {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 1130px) {
+
+    li {
+        font-size: 13px;
+        padding: 10px;
+    }
+    .inspiring-quote > p {
+        font-size: 30px;
+    }
+
+    span {
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 1005px) {
+    .inspiring-quote > p {
+        font-size: 20px;
+    }
+
+    span {
+        font-size: 15px;
+    }
+
+    .blue-box {
+        margin: 50px;
+        padding: 50px;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .header-text {
+        flex-direction: column;
+    }
+
+    .text {
+        width: 100%;
+        text-align: center;
+    }
+
+    .img {
+        width: 100%;
+    }
+
+    .inspiring-quote >p{
+        padding: 100px 150px;
+    }
+
+} 
