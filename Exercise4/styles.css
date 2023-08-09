@@ -1,0 +1,104 @@
+* {
+    margin: 0; padding: 0;
+    box-sizing: border-box;
+    font-family: 'Raleway', sans-serif;;
+}
+
+body {
+    background-color: #166816;
+}
+
+.playground, .pointsContainer{
+    margin: 30px auto;
+    border: 2px solid yellow;
+    border-style:dashed;
+    padding: 40px;
+    width: 70%;
+    background-color: #32CD32;
+}
+
+.pointsContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+h1 {
+    text-align: center;
+    font-size: 45px;
+    padding-bottom: 30px;
+
+    color:#228B22;
+    text-shadow:
+        0 0 20px #f0f062,
+        0 0 30px #f1f173,
+        0 0 40px #eeee6b,
+        0 0 50px #f0f04c,
+        0 0 60px #FFFF00,
+        0 0 70px #FFFF00,
+        0 0 80px #FFFF00;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Tres columnas en la primera fila */
+    grid-template-rows: auto 1fr; /* Altura automática en la primera fila, 1fr en la segunda fila */
+    gap: 10px; /* Espacio entre elementos de la cuadrícula */
+    width: 100%; /* Ancho del contenedor */
+    height: auto; /* Altura automática */
+}
+.btn {
+    width: 100%; /* Para que los botones ocupen todo el ancho de su celda */
+    border-radius: 40px;
+    height: 130%;
+    border-color: greenyellow;
+    background-color: #98FB98;
+    cursor: pointer;
+    box-shadow: 4px 6px 3px 3px rgb(31, 31, 1);
+}
+
+.btnReset {
+    font-size: 20px;
+    padding: 10px 30px;
+    border-radius: 10px;
+    border-style: none;
+    background-color: #98FB98;
+    box-shadow: 4px 6px 3px 3px rgb(31, 31, 1);
+    cursor: pointer;
+}
+
+
+.btn:hover, .btnReset:hover {
+    box-shadow: 4px 3px 3px 3px rgb(31, 31, 1);
+}
+
+#result {
+    grid-column: 2 / span 1; /* Ocupa una columna en la segunda fila */
+    width: 68%; /* Para que el resultado ocupe todo el ancho de su celda */
+    max-width: 100%; /* Asegura que la imagen no se desborde */
+    height: auto; /* Altura automática */
+    padding-top: 50px;
+    justify-self: center;
+}
+
+.point {
+    border: 1px solid yellowgreen;
+    width: 80%;
+    height: 30%;
+    text-align: center;
+    font-size: 50px;
+    padding: 30px 0;
+    background-color: #98FB98;
+}
+
+.playerContainer, .pcContainer {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles.css">
+    <title>Piedra papel tijeras</title>
+</head>
+<body>
+    <div class="playground">
+        <h1>Rock, paper or scissors</h1>
+        <div class="container">
+           <button  class="btn" id="btnRock"><img src="/Exercise4/Images/roca.png" alt="Rock"></button>
+           <button class="btn" id="btnPaper"><img src="/Exercise4/Images/simbolo-de-archivo-de-interfaz-dibujado-a-mano-de-hoja-de-papel.png" alt="paper"></button>
+           <button class="btn" id="btnScissors"><img src="/Exercise4/Images/tijeras.png" alt="scissors"></button>
+            <img id="result" src="">
+        </div>
+    </div>
+    <div class="pointsContainer">
+        <div class="playerContainer">
+            <p class="playerP">PLAYER</p>
+            <div class="player point">0</div>
+        </div>
+       <div class="pcContainer">
+        <p class="pcP">PC</p>
+        <div class="pc point">0</div>
+       </div>
+       <button class="btnReset" id="btnReset">Reset</button>
+    </div>
+
+    <script src="/Exercise4/script.js"></script>
+</body>
+</html>
